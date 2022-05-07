@@ -1,0 +1,126 @@
+format 224
+
+classcanvas 128070 class_ref 160070 // Beverage
+  classdiagramsettings member_max_width 0 end
+  xyz 291 160 2000
+end
+classcanvas 128198 class_ref 160198 // HouseBlend
+  classdiagramsettings member_max_width 0 end
+  xyz 66 344 2000
+end
+classcanvas 128454 class_ref 160326 // Espresso
+  classdiagramsettings member_max_width 0 end
+  xyz 191 345 2006
+end
+classcanvas 128710 class_ref 160454 // DarkRoast
+  classdiagramsettings member_max_width 0 end
+  xyz 313 345 2006
+end
+classcanvas 128966 class_ref 160582 // Decaf
+  classdiagramsettings member_max_width 0 end
+  xyz 440 346 2006
+end
+classcanvas 129222 class_ref 160710 // Condimentdecorator
+  classdiagramsettings member_max_width 0 end
+  xyz 562 348 2000
+end
+classcanvas 129478 class_ref 160838 // Whip
+  classdiagramsettings member_max_width 0 end
+  xyz 268 510 2000
+end
+classcanvas 129734 class_ref 160966 // Soy
+  classdiagramsettings member_max_width 0 end
+  xyz 465 512 2006
+end
+classcanvas 129990 class_ref 161094 // Mocha
+  classdiagramsettings member_max_width 0 end
+  xyz 654 512 2006
+end
+classcanvas 130246 class_ref 161222 // Milk
+  classdiagramsettings member_max_width 0 end
+  xyz 862 513 2006
+end
+relationcanvas 128326 relation_ref 161862 // <generalisation>
+  geometry VHV unfixed
+  from ref 128198 z 2001 to point 115 289
+  line 133574 z 2001 to point 382 289
+  line 133702 z 2001 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128582 relation_ref 161990 // <generalisation>
+  geometry VHV
+  decenter_end 503
+  from ref 128454 z 2007 to point 240 289
+  line 133830 z 2007 to point 384 289
+  line 133958 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129094 relation_ref 162246 // <generalisation>
+  geometry VHV unfixed
+  decenter_end 503
+  from ref 128966 z 2007 to point 489 290
+  line 134342 z 2007 to point 384 290
+  line 134470 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129350 relation_ref 162374 // <generalisation>
+  geometry VHV unfixed
+  from ref 129222 z 2001 to point 636 289
+  line 135110 z 2001 to point 382 289
+  line 135238 z 2001 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129606 relation_ref 162502 // <generalisation>
+  geometry VHV
+  from ref 129478 z 2001 to point 358 452
+  line 135494 z 2001 to point 636 452
+  line 135622 z 2001 to ref 129222
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129862 relation_ref 162630 // <generalisation>
+  geometry VHV
+  from ref 129734 z 2007 to point 551 453
+  line 136006 z 2007 to point 636 453
+  line 136134 z 2007 to ref 129222
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130118 relation_ref 162758 // <generalisation>
+  geometry VHV
+  from ref 129990 z 2007 to point 748 453
+  line 136262 z 2007 to point 636 453
+  line 136390 z 2007 to ref 129222
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130374 relation_ref 162886 // <generalisation>
+  geometry VHV
+  from ref 130246 z 2007 to point 949 453
+  line 136518 z 2007 to point 636 453
+  line 136646 z 2007 to ref 129222
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 134086 relation_ref 162118 // <generalisation>
+  decenter_begin 541
+  decenter_end 503
+  from ref 128710 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 136774 relation_ref 169414 // #mBeverage
+  geometry VHV unfixed
+  decenter_begin 643
+  decenter_end 939
+  from ref 129222 z 2001 label "#mBeverage" italic max_width 255 xyz 537 248 2001 to point 659 268
+  line 136902 z 2001 to point 466 268
+  line 137030 z 2001 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

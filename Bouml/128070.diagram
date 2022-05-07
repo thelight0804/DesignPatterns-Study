@@ -1,0 +1,105 @@
+format 224
+
+classcanvas 128070 class_ref 128070 // WeatherData
+  classdiagramsettings member_max_width 0 end
+  xyzwh -1.7324 1071.83 2000 517 291
+end
+classcanvas 128198 class_ref 128198 // Subject
+  classdiagramsettings member_max_width 0 end
+  xyz 113.326 890.855 2000
+end
+classcanvas 128326 class_ref 128326 // Observer
+  classdiagramsettings member_max_width 0 end
+  xyz 53.7039 722.867 2000
+end
+classcanvas 128838 class_ref 142534 // DisplayElement
+  classdiagramsettings member_max_width 0 end
+  xyz 1222.8 725 2000
+end
+classcanvas 128966 class_ref 142662 // CurrentConditions_1
+  classdiagramsettings member_max_width 0 end
+  xyz 657.5 493.7 2000
+end
+classcanvas 129862 class_ref 142918 // ForecastDisplay_3
+  classdiagramsettings member_max_width 0 end
+  xyz 658.3 874.2 2006
+end
+classcanvas 130374 class_ref 142790 // StatisticsDisplay_2
+  classdiagramsettings member_max_width 0 end
+  xyz 657.2 665.5 2011
+end
+relationcanvas 128454 relation_ref 142790 // <dependency>
+  from ref 128198 z 2001 stereotype "<<<<list>>Observer>>" xyz 167 821 3000 to ref 128326
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128582 relation_ref 142406 // <realization>
+  from ref 128070 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129094 relation_ref 142918 // <realization>
+  from ref 128966 z 2001 to point 499 565
+  line 131270 z 2001 to point 502 756
+  line 131142 z 2001 to ref 128326
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129478 relation_ref 143046 // <realization>
+  from ref 128966 z 2001 to point 1073 570
+  line 131910 z 2001 to point 1072 759
+  line 131526 z 2001 to ref 128838
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129734 relation_ref 142534 // <association>
+  decenter_begin 347
+  from ref 128966 z 2001 to point 579 547
+  line 132422 z 2001 to point 597 1217
+  line 132550 z 2001 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129990 relation_ref 143430 // <realization>
+  from ref 129862 z 2007 to point 499 944
+  line 131014 z 2007 to point 500 756
+  line 130886 z 2007 to ref 128326
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130118 relation_ref 143558 // <realization>
+  from ref 129862 z 2007 to point 1079 942
+  line 132038 z 2007 to point 1073 761
+  line 131654 z 2007 to ref 128838
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130246 relation_ref 142662 // <association>
+  decenter_begin 284
+  from ref 129862 z 2007 to point 589 912
+  line 132294 z 2007 to point 599 1215
+  line 132166 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130502 relation_ref 143174 // <realization>
+  from ref 130374 z 2012 to point 503 756
+  line 131398 z 2012 to ref 128326
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130630 relation_ref 143302 // <realization>
+  decenter_begin 469
+  from ref 130374 z 2012 to ref 128838
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130758 relation_ref 136006 // <association>
+  decenter_begin 381
+  from ref 130374 z 2012 to point 585 741
+  line 132678 z 2012 to point 599 1215
+  line 132806 z 2012 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

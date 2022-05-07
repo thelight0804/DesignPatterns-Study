@@ -1,0 +1,43 @@
+format 224
+
+classcanvas 128070 class_ref 175174 // orderPizza
+  classdiagramsettings member_max_width 0 end
+  xyzwh 164 141 2000 119 71
+end
+classcanvas 128198 class_ref 175302 // pizza
+  classdiagramsettings member_max_width 0 end
+  xyzwh 401 146 2000 91 57
+end
+classcanvas 128326 class_ref 175430 // cheesePizza
+  classdiagramsettings member_max_width 0 end
+  xyzwh 380 290 2000 133 49
+end
+classcanvas 128454 class_ref 175558 // greekPizza
+  classdiagramsettings member_max_width 0 end
+  xyzwh 234 291 2005 133 49
+end
+classcanvas 128582 class_ref 175686 // pepperoniPizza
+  classdiagramsettings member_max_width 0 end
+  xyzwh 522 289 2010 139 49
+end
+relationcanvas 128838 relation_ref 184134 // <unidirectional association>
+  from ref 128070 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128966 relation_ref 184262 // <generalisation>
+  from ref 128454 z 2006 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129094 relation_ref 184390 // <generalisation>
+  from ref 128326 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129222 relation_ref 184518 // <generalisation>
+  from ref 128582 z 2011 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

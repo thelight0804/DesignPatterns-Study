@@ -1,0 +1,47 @@
+format 224
+
+classcanvas 128070 class_ref 167750 // Beverage
+  classdiagramsettings member_max_width 0 end
+  xyz 336 136 2000
+end
+classcanvas 128198 class_ref 167878 // HouseBlend
+  classdiagramsettings member_max_width 0 end
+  xyz 154 553 2000
+end
+classcanvas 129478 class_ref 168518 // Decaf
+  classdiagramsettings member_max_width 0 end
+  xyz 422 554 2006
+end
+classcanvas 129734 class_ref 168390 // Espresso
+  classdiagramsettings member_max_width 0 end
+  xyz 557 553 2006
+end
+classcanvas 130246 class_ref 168646 // DarkRoast
+  classdiagramsettings member_max_width 0 end
+  xyz 292 557 2006
+end
+relationcanvas 128838 relation_ref 176454 // <generalisation>
+  decenter_begin 518
+  decenter_end 972
+  from ref 128198 z 2001 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129606 relation_ref 177350 // <generalisation>
+  from ref 129478 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129862 relation_ref 177094 // <generalisation>
+  decenter_begin 404
+  decenter_end 972
+  from ref 129734 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130374 relation_ref 177606 // <generalisation>
+  from ref 130246 z 2007 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

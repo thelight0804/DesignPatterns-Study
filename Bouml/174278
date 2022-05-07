@@ -1,0 +1,163 @@
+format 224
+"ch04.OldPattern" // ch04.OldPattern
+  revision 1
+  modified_by 70 "ddoep"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  classview 174150 "classView"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    classdiagram 174022 "classDiagram"
+      classdiagramsettings member_max_width 0 end
+      size A0
+    end
+
+    class 175174 "orderPizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 186054 // <unidirectional association>
+	relation 184134 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 186054 // <unidirectional association>
+	  b parent class_ref 175302 // pizza
+      end
+    end
+
+    class 175302 "pizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 175430 "cheesePizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 186310 // <generalisation>
+	relation 184390 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 186310 // <generalisation>
+	  b parent class_ref 175302 // pizza
+      end
+    end
+
+    class 175558 "greekPizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 186182 // <generalisation>
+	relation 184262 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 186182 // <generalisation>
+	  b parent class_ref 175302 // pizza
+      end
+    end
+
+    class 175686 "pepperoniPizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 186438 // <generalisation>
+	relation 184518 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 186438 // <generalisation>
+	  b parent class_ref 175302 // pizza
+      end
+    end
+  end
+
+  deploymentview 167622 "deploymentView"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+  end
+end

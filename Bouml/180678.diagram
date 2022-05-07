@@ -1,0 +1,93 @@
+format 224
+
+classcanvas 128070 class_ref 183110 // PizzaStore
+  classdiagramsettings member_max_width 0 end
+  xyz 392 237 2000
+end
+classcanvas 128198 class_ref 183238 // Pizza
+  classdiagramsettings member_max_width 0 end
+  xyz 393 387 2000
+end
+classcanvas 128582 class_ref 183622 // KRStyleCheesePizza
+  classdiagramsettings member_max_width 0 end
+  xyz 121 637 2000
+end
+classcanvas 128838 class_ref 183750 // USStyleVeggiePizza
+  classdiagramsettings member_max_width 0 end
+  xyz 716 638 2000
+end
+classcanvas 129094 class_ref 190278 // USStyleCheesePizza
+  classdiagramsettings member_max_width 0 end
+  xyz 523 637 2000
+end
+classcanvas 129350 class_ref 190406 // KRStyleVeggiePizza
+  classdiagramsettings member_max_width 0 end
+  xyz 317 636 2000
+end
+classcanvas 132806 class_ref 190534 // KRPizzaStore
+  classdiagramsettings member_max_width 0 end
+  xyz 738 278 2000
+end
+classcanvas 133062 class_ref 190662 // USPizzaStore
+  classdiagramsettings member_max_width 0 end
+  xyz 738 197 2005
+end
+relationcanvas 128454 relation_ref 192326 // <unidirectional association>
+  from ref 128070 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128710 relation_ref 192454 // <generalisation>
+  geometry VHV unfixed
+  decenter_end 349
+  from ref 128582 z 2001 to point 193 605
+  line 129734 z 2001 to point 468 605
+  line 129862 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129222 relation_ref 199110 // <generalisation>
+  geometry VHV unfixed
+  decenter_begin 513
+  decenter_end 638
+  from ref 129094 z 2001 to point 597 606
+  line 130246 z 2001 to point 533 606
+  line 130374 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131142 relation_ref 199366 // <generalisation>
+  geometry VHV unfixed
+  decenter_end 344
+  from ref 129350 z 2001 to point 385 604
+  line 131910 z 2001 to point 467 604
+  line 132038 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132166 relation_ref 199494 // <generalisation>
+  geometry VHV unfixed
+  decenter_end 638
+  from ref 128838 z 2001 to point 785 606
+  line 132550 z 2001 to point 533 606
+  line 132678 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132934 relation_ref 199750 // <generalisation>
+  geometry HVH
+  from ref 132806 z 2001 to point 671 301
+  line 133574 z 2001 to point 671 268
+  line 133702 z 2001 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 133190 relation_ref 199878 // <generalisation>
+  geometry HVH
+  from ref 133062 z 2006 to point 671 220
+  line 133318 z 2006 to point 671 268
+  line 133446 z 2006 to ref 128070
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

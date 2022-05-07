@@ -1,0 +1,1648 @@
+format 224
+"ch04.AbstractFactoryPattern" // ch04.AbstractFactoryPattern
+  revision 6
+  modified_by 70 "ddoep"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "E:\\University\\File\\Java\\src\\ch04\\FullPizzaStore"
+  java_package "ch04.FullPizzaStore"
+  classview 187334 "classView"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    associated_deployment_view deploymentview_ref 180806 // deploymentView
+    classdiagram 187206 "classDiagram"
+      classdiagramsettings draw_all_relations no member_max_width 0 end
+      size A0
+    end
+
+    class 197190 "Pizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 225606 "prepare"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 225734 "bake"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 225862 "cut"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 225990 "box"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      attribute 194886 "name"
+	protected explicit_type "string"
+	init_value "null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 195526 "dough"
+	protected explicit_type "Dough"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 195654 "sauce"
+	protected explicit_type "Sauce"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 195398 "cheese"
+	protected explicit_type "Cheese"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 195782 "topping"
+	protected explicit_type "Topping"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 208326 // <composition>
+	relation 206406 *---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 208326 // <composition>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 208454 // <composition>
+      end
+
+      classrelation 209222 // <directional composition>
+	relation 207174 *-->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 209222 // <directional composition>
+	  b parent class_ref 197318 // PizzaIngredientFactory
+      end
+    end
+
+    class 212934 "PizzaStore"
+      abstract visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 241350 "createPizza"
+	abstract cpp_virtual protected return_type class_ref 183238 // Pizza
+	nparams 1
+	  param in name "type" explicit_type "string"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 241478 "orderPizza"
+	public return_type class_ref 183238 // Pizza
+	nparams 1
+	  param in name "type" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 225862 // <unidirectional association>
+	relation 223814 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 225862 // <unidirectional association>
+	  b parent class_ref 183238 // Pizza
+      end
+
+      classrelation 225990 // <unidirectional association>
+	relation 223942 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 225990 // <unidirectional association>
+	  b parent class_ref 197190 // Pizza
+      end
+
+      classrelation 226118 // <unidirectional association>
+	relation 224070 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 226118 // <unidirectional association>
+	  b parent class_ref 197318 // PizzaIngredientFactory
+      end
+    end
+
+    class 197318 "PizzaIngredientFactory"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 208454 // <composition>
+	relation_ref 206406 // <composition>
+      end
+
+      operation 232518 "createDough"
+	public explicit_return_type "Dough"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 232646 "createSauce"
+	public explicit_return_type "Sauce"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 232774 "createCheese"
+	public explicit_return_type "Cheese"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 232902 "createTopping"
+	public explicit_return_type "Topping"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 197446 "NYPizzaIngredientFactory"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 208838 // <realization>
+	relation 206790 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 208838 // <realization>
+	  b parent class_ref 197318 // PizzaIngredientFactory
+      end
+
+      operation 233030 "createDough"
+	public explicit_return_type "Dough"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 233158 "createSauce"
+	public explicit_return_type "Sauce"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 233286 "createCheese"
+	public explicit_return_type "Cheese"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 240966 "createTopping"
+	public explicit_return_type "Topping"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 222790 // <unidirectional association>
+	relation 220742 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 222790 // <unidirectional association>
+	  b parent class_ref 204230 // ThickDough
+      end
+
+      classrelation 222918 // <unidirectional association>
+	relation 220870 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 222918 // <unidirectional association>
+	  b parent class_ref 204230 // ThickDough
+      end
+
+      classrelation 223814 // <unidirectional association>
+	relation 221766 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 223814 // <unidirectional association>
+	  b parent class_ref 211398 // TomatoSauce
+      end
+
+      classrelation 224582 // <unidirectional association>
+	relation 222534 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 224582 // <unidirectional association>
+	  b parent class_ref 211910 // ShredCheese
+      end
+
+      classrelation 224966 // <unidirectional association>
+	relation 222918 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 224966 // <unidirectional association>
+	  b parent class_ref 211910 // ShredCheese
+      end
+
+      classrelation 225478 // <unidirectional association>
+	relation 223430 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 225478 // <unidirectional association>
+	  b parent class_ref 212422 // BaconTopping
+      end
+    end
+
+    class 203974 "KRPizzaIngredientFactory"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 215750 // <realization>
+	relation 213702 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 215750 // <realization>
+	  b parent class_ref 197318 // PizzaIngredientFactory
+      end
+
+      operation 233542 "createDough"
+	public explicit_return_type "Dough"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 233670 "createSauce"
+	public explicit_return_type "Sauce"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 233798 "createCheese"
+	public explicit_return_type "Cheese"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 241222 "createTopping"
+	public explicit_return_type "Topping"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 223174 // <unidirectional association>
+	relation 221126 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 223174 // <unidirectional association>
+	  b parent class_ref 204486 // CheeseDough
+      end
+
+      classrelation 224070 // <unidirectional association>
+	relation 222022 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 224070 // <unidirectional association>
+	  b parent class_ref 211526 // GarlicSauce
+      end
+
+      classrelation 225734 // <unidirectional association>
+	relation 223686 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 225734 // <unidirectional association>
+	  b parent class_ref 212678 // PotatoTopping
+      end
+
+      classrelation 233414 // <unidirectional association>
+	relation 231366 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 233414 // <unidirectional association>
+	  b parent class_ref 212038 // MozzarellaCheese
+      end
+    end
+
+    class 204102 "ITPizzaIngredientFactory"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 215878 // <realization>
+	relation 213830 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 215878 // <realization>
+	  b parent class_ref 197318 // PizzaIngredientFactory
+      end
+
+      operation 234054 "createDough"
+	public explicit_return_type "Dough"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 234182 "createSauce"
+	public explicit_return_type "Sauce"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 234310 "createCheese"
+	public explicit_return_type "Cheese"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 241094 "createTopping"
+	public explicit_return_type "Topping"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 223046 // <unidirectional association>
+	relation 220998 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 223046 // <unidirectional association>
+	  b parent class_ref 204358 // ThinDough
+      end
+
+      classrelation 223942 // <unidirectional association>
+	relation 221894 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 223942 // <unidirectional association>
+	  b parent class_ref 211654 // CarbonaraSauce
+      end
+
+      classrelation 225606 // <unidirectional association>
+	relation 223558 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 225606 // <unidirectional association>
+	  b parent class_ref 212550 // HerbTopping
+      end
+
+      classrelation 233158 // <unidirectional association>
+	relation 231110 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 233158 // <unidirectional association>
+	  b parent class_ref 204102 // ITPizzaIngredientFactory
+      end
+
+      classrelation 233286 // <unidirectional association>
+	relation 231238 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 233286 // <unidirectional association>
+	  b parent class_ref 212166 // GorgonzolaCheese
+      end
+    end
+
+    class 204230 "ThickDough"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 222406 // <realization>
+	relation 220358 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 222406 // <realization>
+	  b parent class_ref 211014 // Dough
+      end
+    end
+
+    class 204358 "ThinDough"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 222534 // <realization>
+	relation 220486 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 222534 // <realization>
+	  b parent class_ref 211014 // Dough
+      end
+    end
+
+    class 204486 "CheeseDough"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 222662 // <realization>
+	relation 220614 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 222662 // <realization>
+	  b parent class_ref 211014 // Dough
+      end
+    end
+
+    class 211014 "Dough"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 211270 "Sauce"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 211398 "TomatoSauce"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 223430 // <realization>
+	relation 221382 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 223430 // <realization>
+	  b parent class_ref 211270 // Sauce
+      end
+    end
+
+    class 211526 "GarlicSauce"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 223558 // <realization>
+	relation 221510 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 223558 // <realization>
+	  b parent class_ref 211270 // Sauce
+      end
+    end
+
+    class 211654 "CarbonaraSauce"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 223686 // <realization>
+	relation 221638 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 223686 // <realization>
+	  b parent class_ref 211270 // Sauce
+      end
+    end
+
+    class 211782 "Cheese"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 211910 "ShredCheese"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 224198 // <realization>
+	relation 222150 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 224198 // <realization>
+	  b parent class_ref 211782 // Cheese
+      end
+    end
+
+    class 212038 "MozzarellaCheese"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 224326 // <realization>
+	relation 222278 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 224326 // <realization>
+	  b parent class_ref 211782 // Cheese
+      end
+    end
+
+    class 212166 "GorgonzolaCheese"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 224454 // <realization>
+	relation 222406 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 224454 // <realization>
+	  b parent class_ref 211782 // Cheese
+      end
+    end
+
+    class 212294 "Topping"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 212422 "BaconTopping"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 225094 // <realization>
+	relation 223046 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 225094 // <realization>
+	  b parent class_ref 212294 // Topping
+      end
+    end
+
+    class 212550 "HerbTopping"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 225222 // <realization>
+	relation 223174 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 225222 // <realization>
+	  b parent class_ref 212294 // Topping
+      end
+    end
+
+    class 212678 "PotatoTopping"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 225350 // <realization>
+	relation 223302 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 225350 // <realization>
+	  b parent class_ref 212294 // Topping
+      end
+    end
+
+    class 212806 "NYPizzaStore"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 226374 // <realization>
+	relation 224326 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 226374 // <realization>
+	  b parent class_ref 212934 // PizzaStore
+      end
+
+      operation 241606 "createPizza"
+	cpp_virtual protected return_type class_ref 183238 // Pizza
+	nparams 1
+	  param in name "type" explicit_type "string"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 213062 "ITPizzaStore"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 226502 // <realization>
+	relation 224454 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 226502 // <realization>
+	  b parent class_ref 212934 // PizzaStore
+      end
+
+      operation 241734 "createPizza"
+	cpp_virtual protected return_type class_ref 183238 // Pizza
+	nparams 1
+	  param in name "type" explicit_type "string"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 213190 "KRPizzaSotre"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 226630 // <realization>
+	relation 224582 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 226630 // <realization>
+	  b parent class_ref 212934 // PizzaStore
+      end
+
+      operation 241862 "createPizza"
+	cpp_virtual protected return_type class_ref 183238 // Pizza
+	nparams 1
+	  param in name "type" explicit_type "string"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 219718 "NYPizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 233542 // <generalisation>
+	relation 231494 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 233542 // <generalisation>
+	  b parent class_ref 197190 // Pizza
+      end
+
+      operation 248518 "NYPizza"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "ingredientFactory" type class_ref 197318 // PizzaIngredientFactory
+	
+	java_def "  ${comment}${@}${visibility}${final}${synchronized}${name}${(}${t0} ${p0}${)}${throws} {
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 248390 "prepare"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 219846 "ITPizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 233670 // <generalisation>
+	relation 231622 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 233670 // <generalisation>
+	  b parent class_ref 197190 // Pizza
+      end
+
+      operation 248646 "ITPizza"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "ingredientFactory" type class_ref 197318 // PizzaIngredientFactory
+	
+	java_def "  ${comment}${@}${visibility}${final}${synchronized}${name}${(}${t0} ${p0}${)}${throws} {
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 248774 "prepare"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 219974 "KRPizza"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 233798 // <generalisation>
+	relation 231750 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 233798 // <generalisation>
+	  b parent class_ref 197190 // Pizza
+      end
+
+      operation 248902 "KRPizza"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "ingredientFactory" type class_ref 197318 // PizzaIngredientFactory
+	
+	java_def "  ${comment}${@}${visibility}${final}${synchronized}${name}${(}${t0} ${p0}${)}${throws} {
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 249030 "prepare"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 180806 "deploymentView"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 184262 "Pizza"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 197190 // Pizza
+      end
+    end
+
+    artifact 184390 "PizzaStore"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212934 // PizzaStore
+      end
+    end
+
+    artifact 184518 "PizzaIngredientFactory"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      php_src "<?php
+${comment}
+${namespace}
+${require_once}
+${use}
+${definition}
+?>
+"
+      idl_src "#ifndef ${MODULE}_${NAME}_H
+#define ${MODULE}_${NAME}_H
+
+${comment}
+${includes}
+${module_start}
+${definition}
+${module_end}
+#endif
+"
+      associated_elems
+	class_ref 197318 // PizzaIngredientFactory
+      end
+    end
+
+    artifact 184646 "NYPizzaIngredientFactory"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 197446 // NYPizzaIngredientFactory
+      end
+    end
+
+    artifact 184774 "KRPizzaIngredientFactory"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 203974 // KRPizzaIngredientFactory
+      end
+    end
+
+    artifact 184902 "ITPizzaIngredientFactory"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 204102 // ITPizzaIngredientFactory
+      end
+    end
+
+    artifact 185030 "ThickDough"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 204230 // ThickDough
+      end
+    end
+
+    artifact 185158 "ThinDough"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 204358 // ThinDough
+      end
+    end
+
+    artifact 185286 "CheeseDough"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 204486 // CheeseDough
+      end
+    end
+
+    artifact 185414 "Dough"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      php_src "<?php
+${comment}
+${namespace}
+${require_once}
+${use}
+${definition}
+?>
+"
+      idl_src "#ifndef ${MODULE}_${NAME}_H
+#define ${MODULE}_${NAME}_H
+
+${comment}
+${includes}
+${module_start}
+${definition}
+${module_end}
+#endif
+"
+      associated_elems
+	class_ref 211014 // Dough
+      end
+    end
+
+    artifact 185542 "Sauce"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      php_src "<?php
+${comment}
+${namespace}
+${require_once}
+${use}
+${definition}
+?>
+"
+      idl_src "#ifndef ${MODULE}_${NAME}_H
+#define ${MODULE}_${NAME}_H
+
+${comment}
+${includes}
+${module_start}
+${definition}
+${module_end}
+#endif
+"
+      associated_elems
+	class_ref 211270 // Sauce
+      end
+    end
+
+    artifact 185670 "TomatoSauce"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 211398 // TomatoSauce
+      end
+    end
+
+    artifact 185798 "GarlicSauce"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 211526 // GarlicSauce
+      end
+    end
+
+    artifact 185926 "CarbonaraSauce"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 211654 // CarbonaraSauce
+      end
+    end
+
+    artifact 186054 "Cheese"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      php_src "<?php
+${comment}
+${namespace}
+${require_once}
+${use}
+${definition}
+?>
+"
+      idl_src "#ifndef ${MODULE}_${NAME}_H
+#define ${MODULE}_${NAME}_H
+
+${comment}
+${includes}
+${module_start}
+${definition}
+${module_end}
+#endif
+"
+      associated_elems
+	class_ref 211782 // Cheese
+      end
+    end
+
+    artifact 186182 "ShredCheese"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 211910 // ShredCheese
+      end
+    end
+
+    artifact 186310 "Mozzarellacheese"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212038 // MozzarellaCheese
+      end
+    end
+
+    artifact 186438 "GorgonzolaCheese"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212166 // GorgonzolaCheese
+      end
+    end
+
+    artifact 186566 "Topping"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      php_src "<?php
+${comment}
+${namespace}
+${require_once}
+${use}
+${definition}
+?>
+"
+      idl_src "#ifndef ${MODULE}_${NAME}_H
+#define ${MODULE}_${NAME}_H
+
+${comment}
+${includes}
+${module_start}
+${definition}
+${module_end}
+#endif
+"
+      associated_elems
+	class_ref 212294 // Topping
+      end
+    end
+
+    artifact 186694 "BaconTopping"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212422 // BaconTopping
+      end
+    end
+
+    artifact 186822 "HerbTopping"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212550 // HerbTopping
+      end
+    end
+
+    artifact 186950 "PotatoTopping"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212678 // PotatoTopping
+      end
+    end
+
+    artifact 187078 "NYPizzaStore"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 212806 // NYPizzaStore
+      end
+    end
+
+    artifact 187206 "ITPizzaStore"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 213062 // ITPizzaStore
+      end
+    end
+
+    artifact 187334 "KRPizzaSotre"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 213190 // KRPizzaSotre
+      end
+    end
+
+    artifact 193862 "NYPizza"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 219718 // NYPizza
+      end
+    end
+
+    artifact 193990 "ITPizza"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 219846 // ITPizza
+      end
+    end
+
+    artifact 194118 "KRPizza"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 219974 // KRPizza
+      end
+    end
+  end
+end

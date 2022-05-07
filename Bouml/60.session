@@ -1,0 +1,16 @@
+window_sizes 2560 1361 600 1954 1188 120
+
+diagrams
+  classdiagram_ref 147526 // WeaterClassDiagram
+    1563 950 100 A0 144 0
+  active  classdiagram_ref 187206 // classDiagram
+    1563 950 100 A0 217 0
+end
+show_stereotypes
+selected classdiagram_ref 187206 // classDiagram
+open
+  class_ref 134598 // FlyBehavior
+  classview_ref 147526 // classView
+  classview_ref 187334 // classView
+end
+end
