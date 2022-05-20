@@ -1,0 +1,43 @@
+format 224
+
+classcanvas 128070 class_ref 226502 // RemoteControl
+  classdiagramsettings member_max_width 0 end
+  xyz 267.4 206 2000
+end
+classcanvas 128198 class_ref 226630 // Command
+  classdiagramsettings member_max_width 0 end
+  xyz 510.9 470.2 2000
+end
+classcanvas 129350 class_ref 226758 // NoCommand
+  classdiagramsettings member_max_width 0 end
+  xyz 265.4 468.8 2000
+end
+classcanvas 129606 class_ref 233286 // LightOnCommand
+  classdiagramsettings member_max_width 0 end
+  xyz 289.9 642.7 2000
+end
+relationcanvas 128454 relation_ref 238406 // <aggregation>
+  from ref 128070 z 2001 stereotype "<<list>>" xyz 590 359.5 3000 to ref 128198
+  role_a_pos 580 447 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128582 relation_ref 238534 // <aggregation>
+  geometry HVH unfixed
+  decenter_begin 472
+  from ref 128070 z 2001 stereotype "<<list>>" xyz 920.5 250 3000 to point 957.2 275
+  line 128966 z 2001 to point 957.2 506
+  line 129094 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129478 relation_ref 238662 // <realization>
+  from ref 129350 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129734 relation_ref 245190 // <dependency>
+  from ref 129606 z 2001 to ref 128198
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

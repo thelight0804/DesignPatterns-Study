@@ -1,6 +1,6 @@
 format 224
 "Bouml"
-  revision 15
+  revision 16
   modified_by 70 "ddoep"
 
 
@@ -61,4 +61,6 @@ format 224
   package_ref 180934 // ch04.FactoryMethodPattern
 
   package_ref 187462 // ch04.AbstractFactoryPattern
+
+  package_ref 193990 // ch06.CommandPattern
 end
